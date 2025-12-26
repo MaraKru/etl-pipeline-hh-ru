@@ -1,0 +1,8 @@
+services:
+  etl:
+    build: .
+    volumes:
+      - .:/app
+    working_dir: /app
+    environment:
+      - TZ=Europe/Moscow
